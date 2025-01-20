@@ -38,6 +38,8 @@ const Polygon: React.FC<PolygonProps> = ({
         fill={fill}
         stroke={stroke}
         strokeWidth={strokeWidth}
+        transform={`rotate(${90} ${size} ${size})`} // Apply rotation around the center
+
       />
     </svg>
   );
