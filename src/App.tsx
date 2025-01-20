@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <Polygon sides={sides} size={100} fill="lightblue" stroke="black" strokeWidth={1} />
-      <Slider min={3} max={20} onChange={setSides} value={sides} />
+      <Slider min={3} max={12} onChange={setSides} value={sides} />
     </>
   )
 }
