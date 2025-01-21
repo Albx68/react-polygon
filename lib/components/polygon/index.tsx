@@ -1,6 +1,7 @@
+
 import React from "react";
 
-type PolygonProps = {
+type TPolygonProps = {
   sides: number; // Number of sides for the polygon
   size: number; // Size of the polygon (radius of the circumscribed circle)
   fill?: string; // Fill color of the polygon
@@ -8,13 +9,13 @@ type PolygonProps = {
   strokeWidth?: number; // Width of the stroke
 };
 
-const Polygon: React.FC<PolygonProps> = ({
+export function Polygon({
   sides,
   size,
   fill = "#3498db",
   stroke = "#2c3e50",
   strokeWidth = 2,
-}) => {
+}: TPolygonProps) {
   if (sides < 3) {
     return <p>A polygon must have at least 3 sides.</p>;
   }
@@ -44,7 +45,5 @@ const Polygon: React.FC<PolygonProps> = ({
     </svg>
   );
 };
-
-export default Polygon;
 
 
