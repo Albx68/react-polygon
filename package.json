@@ -1,7 +1,7 @@
 {
   "name": "react-polygon-ts",
   "private": false,
-  "version": "0.0.1",
+  "version": "0.0.4",
   "type": "module",
   "main": "dist/main.js",
   "types": "dist/main.d.ts",
@@ -10,7 +10,7 @@
   ],
   "scripts": {
     "dev": "vite",
-    "build": "tsc --p ./tsconfig-build.json && vite build",
+    "build": "tsc --p ./tsconfig.lib.json && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "prepublishOnly": "npm run build"
@@ -41,6 +41,6 @@
     "**/*.css"
   ],
   "dependencies": {
-    "react-polygon-ts": "^0.0.0"
+    "react-polygon-ts": "^0.0.4"
   }
 }

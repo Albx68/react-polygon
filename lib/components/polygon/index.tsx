@@ -1,5 +1,4 @@
 
-import React from "react";
 
 type TPolygonProps = {
   sides: number; // Number of sides for the polygon
