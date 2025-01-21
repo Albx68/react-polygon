@@ -1,5 +1,8 @@
 # react-polygon-ts Documentation
 
+## Steps to install
+npm i react-polygon-ts
+
 ## Description
 Component to draw polygons of n>=3 sides
 
