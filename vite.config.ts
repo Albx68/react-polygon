@@ -9,7 +9,7 @@ import { glob } from 'glob'
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react(), dts({ include: ['lib'] })],
+  plugins: [react(), dts({ include: ['lib'], rollupTypes: true })],
   build: {
     lib: {
       entry: resolve(__dirname, 'lib/main.ts'),

@@ -1,11 +1,13 @@
 {
   "name": "react-polygon-ts",
   "private": false,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
-  "main":"dist/main.js",
-  "types":"dist/main.d.ts",
-  "files":["dist"],
+  "main": "dist/main.js",
+  "types": "dist/main.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "tsc --p ./tsconfig-build.json && vite build",
@@ -18,8 +20,6 @@
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
     "@eslint/js": "^9.17.0",
     "@types/node": "^22.10.7",
     "@types/react": "^18.3.18",
@@ -30,12 +30,17 @@
     "eslint-plugin-react-refresh": "^0.4.16",
     "glob": "^11.0.1",
     "globals": "^15.14.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "typescript": "~5.6.2",
     "typescript-eslint": "^8.18.2",
     "vite": "^6.0.5",
     "vite-plugin-dts": "^4.5.0"
   },
-   "sideEffects": [
-   "**/*.css"
- ]
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "dependencies": {
+    "react-polygon-ts": "^0.0.0"
+  }
 }
