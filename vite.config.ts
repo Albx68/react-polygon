@@ -31,7 +31,11 @@ export default defineConfig({
           // lib/nested/foo.ts becomes /project/lib/nested/foo.ts
           fileURLToPath(new URL(file, import.meta.url))
         ])
-      )
+      ),
+      output: {
+        assetFileNames: 'assets/[name][extname]',
+        entryFileNames: '[name].js',
+      }
     }
   },
 
