@@ -36,6 +36,6 @@
     "vite-plugin-dts": "^4.5.0"
   },
    "sideEffects": [
-+   "**/*.css"
-+ ],
+   "**/*.css"
+ ],
 }
