@@ -1,7 +1,7 @@
 
 import { useState } from 'react'
 import './App.css'
-import Polygon from './components/polygon'
+import { Polygon } from '../lib/components/polygon/index.tsx'
 import Slider from './components/slider'
 
 function App() {
