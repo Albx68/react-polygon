@@ -19,7 +19,7 @@
   },
   "devDependencies": {
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
     "@eslint/js": "^9.17.0",
     "@types/node": "^22.10.7",
     "@types/react": "^18.3.18",
@@ -37,5 +37,5 @@
   },
    "sideEffects": [
    "**/*.css"
- ],
+ ]
 }
