@@ -1,17 +1,11 @@
+import { Polygon } from "../lib/components/polygon/index.tsx"
 
-import { useState } from 'react'
-import './App.css'
-import Slider from './components/slider'
-import { Polygon } from 'react-polygon-ts'
-function App() {
-  const [sides, setSides] = useState(3)
-  return (
-    <>
-      <Polygon sides={sides} size={100} fill="lightblue" stroke="black" strokeWidth={1} />
+const App = () => {
 
-      <Slider min={3} max={12} onChange={setSides} value={sides} />
-    </>
-  )
+  return <div style={{ display: "flex", width: 400, height: 400, justifyContent: 'center', alignItems: 'center', backgroundColor: 'red' }}>
+    <Polygon sides={3} size={40} strokeWidth={18} strokeLinecap="round" strokeLinejoin="round" />
+
+  </div>
 }
 
 export default App
