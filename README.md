@@ -24,3 +24,11 @@ export default App;
 
 This example renders a pentagon with the specified size and styles.
 
+
+
+| Prop          | Type                     | Description                                                                                             | Default      |
+|---------------|--------------------------|---------------------------------------------------------------------------------------------------------|--------------|
+| `sides`       | `number`                 | The number of sides for the polygon (must be `>= 3`).                                                  | **Required** |
+| `size`        | `number`                 | The size of the polygon, representing the radius of the circumscribed circle.                          | **Required** |
+| `strokeWidth` | `number`                 | The width of the polygon's stroke (applies to the SVG `stroke-width` attribute).                        | `2`          |
+| ...props      | `React.SVGProps<SVGPolygonElement>` | Any other valid attributes for an SVG `<polygon>` element, such as `fill`, `stroke`, `strokeOpacity`. | N/A   
